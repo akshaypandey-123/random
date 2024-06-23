@@ -1,0 +1,75 @@
+HTML - <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <img src="high-roller-bet.png" alt="High Roller Bet">
+    </div>
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="options">
+      <a href="#" class="register-link">Register</a>
+      <a href="#" class="forgot-password-link">Forgot Password?</a>
+    </div>
+    <div id="forgotPasswordForm" class="forgot-password-form">
+      <h2>Forgot Password</h2>
+      <p>Enter your mobile number to receive a verification code:</p>
+      <form id="forgotPasswordStep1">
+        <div class="form-group">
+          <input type="text" id="mobileNumberForgot" name="mobileNumberForgot" placeholder="Mobile Number" required>
+        </div>
+        <button type="submit">Send Verification Code</button>
+      </form>
+      <div id="forgotPasswordStep2" class="hide">
+        <p>Enter the verification code and set your new password:</p>
+        <form id="forgotPasswordStep2Form">
+          <div class="form-group">
+            <input type="text" id="verificationCodeForgot" name="verificationCodeForgot" placeholder="Verification Code" required>
+          </div>
+          <div class="form-group">
+            <input type="password" id="newPasswordForgot" name="newPasswordForgot" placeholder="New Password" required>
+          </div>
+          <button type="submit">Reset Password</button>
+        </form>
+      </div>
+    </div>
+    <div id="registerForm" class="register-form hide">
+      <h2>Register</h2>
+      <p>Enter your mobile number to receive a verification code:</p>
+      <form id="registerStep1">
+        <div class="form-group">
+          <input type="text" id="mobileNumberRegister" name="mobileNumberRegister" placeholder="Mobile Number" required>
+        </div>
+        <button type="submit">Send Verification Code</button>
+      </form>
+      <div id="registerStep2" class="hide">
+        <p>Enter the verification code and set your new password:</p>
+        <form id="registerStep2Form">
+          <div class="form-group">
+            <input type="text" id="verificationCodeRegister" name="verificationCodeRegister" placeholder="Verification Code" required>
+          </div>
+          <div class="form-group">
+            <input type="password" id="newPasswordRegister" name="newPasswordRegister" placeholder="New Password" required>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

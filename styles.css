@@ -1,0 +1,42 @@
+
+/* Add this CSS to show and hide the registration form */
+.register-form {
+  display: none;
+}
+
+/* Ensure all form-groups have consistent styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Adjust button styles for the entire document */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust button hover state */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Set a common style for the input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Provide additional space at the bottom of the form group */
